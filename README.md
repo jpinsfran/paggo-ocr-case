@@ -1,4 +1,8 @@
 ## Iniciando
+
+Você pode rodar o site diretamente do link: https://paggo-ocr-case-tau.vercel.app/
+Utilizei Vercel para hospedar o Frontend e Railway para hospedar o Backend
+
 # Paggo OCR Case
 
 Projeto fullstack para upload de documentos, extração de texto com OCR, explicação automatizada via IA (OpenAI) e chat interativo. O sistema conta com autenticação de usuários, dashboard pessoal e download de resultados processados.
