@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;900&display=swap');
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+h1{
+  font-size: 32px;
+  font-weight: 800;
+  color: #0f0f0f;
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.nav{
+  background-color: #0f0f0f;
+  height: 80px;
+}
+.btnLogout{
+  cursor: pointer;
+  font-weight: 900;
+  background-color: #0f0f0f;
+  border: none;
+  width: auto;
+  height: 20px;
+  color: white;
+  display: inline-block;
+  justify-items: right;
+  font-size: 16px;
+}
+.btnLogout:hover{
+  color: #9c0707;
+}
+.btnUpload{
+  background-color: #0f0f0f;
+  color: white;
+  border-radius: 12px;
+
+}
+
+.btnBaixar{
+  background-color: #0f0f0f;
+  color: white;
+  height: 24px;
+  width: 180px;
+  border-radius: 4px;
+  font-size: 12px;
+
+}
+
+h3{
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f0f0f;
+}
+.paggo{
+  margin-top: 30px;
+  margin-left: 40px;
+  width: 90%;
+  height: 20px;
+  padding-top: 0;
+  text-align: left;
+  color: white;
+  display: inline-block;
+  font-weight: 900;
+}
+
+.abaUpload{
+  width: 75%;
+  margin-top: 80px;
+  justify-items: center;
+}
+.lista{
+  width: 25%;
+}
+.documentos{
+  margin-top: 60px;
+}
+p{
+  font-size: 16px;
+  font-weight: 200;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+.chat{
+  width: 800px;
+  height: 80px;
+  border-radius: 12px;
+
+}
+.btn-enviar{
+  height: 40px;
+  width: 120px;
+  display: block;
+  background-color: #0f0f0f;
+  color: white;
+  border-radius: 8px;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
