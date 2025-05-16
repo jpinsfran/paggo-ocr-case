@@ -2,7 +2,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/router';
 
-const API_BASE = 'http://localhost:3000'; // Ajuste conforme seu backend
+const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL; 
 
 export default function Home() {
   const router = useRouter();
