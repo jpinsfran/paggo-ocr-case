@@ -26,7 +26,7 @@ DATABASE_URL=postgresql://username:senha@localhost:5432/paggo_ocr
 JWT_SECRET=sua-chave-secreta
 OPENAI_API_KEY=sua-chave-da-openai
 ```
-Substitua senha, JWT_SECRET e OPENAI_API_KEY pelos seus próprios valores.
+Substitua username do db,senha, JWT_SECRET e OPENAI_API_KEY pelos seus próprios valores.
 OBS IMPORTANTE: a versão da OpenIa usado no programa é a gpt-4o-mini se a sua for diferente edite o arquivo backend/src/documents/llm.services.ts na linha 12 para o modelo do seu chatGPT
 ou crie a sua propria(recomendado) em https://platform.openai.com/api-keys
 
