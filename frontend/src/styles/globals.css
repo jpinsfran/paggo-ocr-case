@@ -19,8 +19,11 @@ h2{
 .nav{
   background-color: #0f0f0f;
   height: 80px;
+  width: 100%;
+  position: fixed;
 }
 .btnLogout{
+  margin-top: 30px;
   cursor: pointer;
   font-weight: 900;
   background-color: #0f0f0f;
@@ -41,6 +44,14 @@ h2{
   border-radius: 12px;
 
 }
+.log_reg{
+  margin-top: 80px;
+  justify-items: center;
+  text-align: center;
+}
+.inp{
+  border-radius: 12px;
+}
 
 .btnBaixar{
   background-color: #0f0f0f;
@@ -57,6 +68,15 @@ h3{
   font-weight: 600;
   color: #0f0f0f;
 }
+.bv{
+  font-size: 40px;
+  height: 40px;
+  width: auto;
+  margin-left: 70px;
+  margin-right: 70px;
+  font-weight: 900;
+  justify-items: center;
+}
 .paggo{
   margin-top: 30px;
   margin-left: 40px;
@@ -71,14 +91,14 @@ h3{
 
 .abaUpload{
   width: 75%;
-  margin-top: 80px;
+  margin-top: 120px;
   justify-items: center;
 }
 .lista{
   width: 25%;
 }
 .documentos{
-  margin-top: 60px;
+  margin-top: 120px;
 }
 p{
   font-size: 16px;
@@ -96,13 +116,27 @@ p{
   border-radius: 12px;
 
 }
+
+.formulario{
+  border-radius: 12px;
+}
 .btn-enviar{
+  margin-top: 24px;
   height: 40px;
-  width: 120px;
+  width: 160px;
   display: block;
+  font-size: 16px;
+  font-family: 800;
   background-color: #0f0f0f;
   color: white;
   border-radius: 8px;
+}
+.btnReg{
+  color: gray;
+  font-size: 16px;
+}
+.btnReg:hover{
+  color: #b31818;
 }
 
 html,

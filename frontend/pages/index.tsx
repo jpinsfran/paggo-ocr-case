@@ -30,12 +30,14 @@ export default function Home() {
   };
 
   return (
-    <div style={{ maxWidth: 400, margin: '50px auto', fontFamily: 'Arial, sans-serif' }}>
-      <h1>{isLogin ? 'Login' : 'Registrar'}</h1>
+    
+    <div style={{ maxWidth: 400, margin: '50px auto', fontFamily: 'Arial, sans-serif' }}>  
+    <span className='bv'>Paggo-OCR</span> 
+      <h1 className = "log_reg">{isLogin ? 'Login' : 'Registrar'}</h1>
       <form onSubmit={handleSubmit}>
-        <div style={{ marginBottom: 10 }}>
+        <div className ="formulario"style={{ marginBottom: 10 }}>
           <label>Email:</label><br />
-          <input
+          <input className='inp'
             type="email"
             value={email}
             onChange={e => setEmail(e.target.value)}
@@ -45,7 +47,7 @@ export default function Home() {
         </div>
         <div style={{ marginBottom: 10 }}>
           <label>Senha:</label><br />
-          <input
+          <input className='inp'
             type="password"
             value={password}
             onChange={e => setPassword(e.target.value)}
@@ -55,19 +57,19 @@ export default function Home() {
           />
         </div>
         {error && <div style={{ color: 'red', marginBottom: 10 }}>{error}</div>}
-        <button type="submit" disabled={loading} style={{ padding: '10px 20px' }}>
+        <button className='btn-enviar' type="submit" disabled={loading} style={{ padding: '10px 20px' }}>
           {loading ? 'Carregando...' : isLogin ? 'Entrar' : 'Registrar'}
         </button>
       </form>
 
       <p style={{ marginTop: 20 }}>
         {isLogin ? 'Não tem conta?' : 'Já tem conta?'}{' '}
-        <button
+        <button className='btnReg'
           onClick={() => {
             setError('');
             setIsLogin(!isLogin);
           }}
-          style={{ color: 'blue', textDecoration: 'underline', background: 'none', border: 'none', cursor: 'pointer' }}
+          style={{ textDecoration: 'none', background: 'none', border: 'none', cursor: 'pointer' }}
         >
           {isLogin ? 'Registre-se' : 'Faça login'}
         </button>
